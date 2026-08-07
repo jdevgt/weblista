@@ -70,7 +70,7 @@
         body { font-family: 'Space Grotesk', sans-serif; }
         h1, h2, h3, .font-display { font-family: 'Archivo Black', sans-serif; }
         .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .faq-item.active .faq-content { max-height: 200px; border-top: 4px solid #000; }
+        .faq-item.active .faq-content { max-height: 800px; border-top: 4px solid #000; padding-bottom: 24px; }
         .faq-item.active .material-symbols-outlined { transform: rotate(180deg); }
         .brutal-border { border: 4px solid #000; }
         
@@ -78,6 +78,10 @@
         .text-fluid-h1 { font-size: clamp(40px, 8vw, 88px); }
         .text-fluid-h2 { font-size: clamp(32px, 6vw, 72px); }
         .text-fluid-h3 { font-size: clamp(24px, 4vw, 48px); }
+        
+        /* Smooth scroll and margin for sticky header */
+        html { scroll-behavior: smooth; }
+        [id] { scroll-margin-top: 90px; }
         
         /* Mobile Menu */
         #mobile-menu { transition: transform 0.3s ease-in-out; }
@@ -405,7 +409,25 @@
 </div>
 </footer>
 
-
-
+<script>
+    // Script para forzar el scroll suave en todos los navegadores (especialmente Chrome Android)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                    mobileMenu.classList.remove('open');
+                }
+            }
+        });
+    });
+</script>
 
 </body></html>

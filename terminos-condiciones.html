@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Términos y Condiciones | Weblista</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/webp" href="assets/favicon3.webp">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&amp;family=Archivo+Black&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#00E5FF",
+                        "primary-hover": "#00B3CC",
+                        "secondary": "#CCFF00",
+                        "surface": "#FFFFFF",
+                        "surface-light": "#FFFFFF",
+                        "dark": "#000000",
+                        "border": "#000000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "xxl": "80px",
+                        "lg": "24px",
+                        "xs": "4px",
+                        "sm": "8px",
+                        "unit": "4px",
+                        "md": "16px",
+                        "gutter": "24px",
+                        "container-max": "1000px"
+                    },
+                    "fontFamily": {
+                        "mono-code": ["JetBrains Mono"],
+                        "display": ["Archivo Black", "sans-serif"],
+                        "body": ["Space Grotesk", "sans-serif"]
+                    },
+                    "boxShadow": {
+                        "brutal": "8px 8px 0px 0px rgba(0,0,0,1)",
+                        "brutal-lg": "16px 16px 0px 0px rgba(0,0,0,1)",
+                        "brutal-white": "8px 8px 0px 0px rgba(255,255,255,1)"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        h1, h2, h3, .font-display {
+            font-family: 'Archivo Black', sans-serif;
+        }
+
+        .brutal-border {
+            border: 4px solid #000;
+        }
+
+        /* Fluid Typography */
+        .text-fluid-h1 { font-size: clamp(40px, 8vw, 88px); }
+        .text-fluid-h2 { font-size: clamp(32px, 6vw, 72px); }
+
+        html { scroll-behavior: smooth; }
+        [id] { scroll-margin-top: 40px; }
+
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
+        #mobile-menu.open { transform: translateX(0); }
+
+        .legal-content h2 {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        .legal-content p {
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        .legal-content ul {
+            list-style-type: disc;
+            margin-left: 24px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-dark antialiased selection:bg-secondary selection:text-dark font-bold">
+    <!-- TopNavBar -->
+    <nav class="bg-surface-light/90 backdrop-blur-sm border-b-4 border-border top-0 sticky z-50 bg-surface-light/95">
+        <div class="flex justify-between items-center px-gutter py-md max-w-container-max mx-auto w-full">
+            <a class="font-display text-[24px] md:text-[28px] uppercase tracking-tighter hover:text-primary transition-colors" href="index.html">
+                Weblista
+            </a>
+            <div class="hidden md:flex gap-lg items-center font-display text-[16px] tracking-wide uppercase">
+                <a class="hover:text-primary transition-colors" href="index.html#solucion">Solución</a>
+                <!-- <a class="hover:text-primary transition-colors" href="index.html#demos">Demos</a> -->
+                <a class="hover:text-primary transition-colors" href="index.html#modelo">Modelo</a>
+                <a class="hover:text-primary transition-colors" href="index.html#precios">Precios</a>
+                <a class="hover:text-primary transition-colors" href="index.html#faq">FAQ</a>
+            </div>
+            <div class="flex items-center gap-sm">
+                <a class="inline-flex items-center justify-center bg-primary text-dark font-display md:text-[16px] px-sm md:px-md py-sm brutal-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-brutal hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all uppercase tracking-wide text-[13px]" href="https://mpago.la/2e2Bezw" target="_blank" rel="noopener noreferrer">
+                    Suscribirse
+                </a>
+                <button class="md:hidden text-dark p-unit brutal-border bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+                    <span class="material-symbols-outlined text-[24px] block">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="fixed inset-y-0 right-0 w-64 bg-white brutal-border border-r-0 z-50 transform translate-x-full flex flex-col pt-xxl px-lg" id="mobile-menu">
+        <button class="absolute top-md right-md text-dark p-unit brutal-border bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+            <span class="material-symbols-outlined text-[24px] block">close</span>
+        </button>
+        <div class="flex flex-col gap-lg font-display text-[20px] tracking-wide uppercase mt-lg">
+            <a class="hover:text-primary transition-colors" href="index.html#solucion" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solución</a>
+            <!-- <a class="hover:text-primary transition-colors" href="index.html#demos" onclick="document.getElementById('mobile-menu').classList.remove('open')">Demos</a> -->
+            <a class="hover:text-primary transition-colors" href="index.html#modelo" onclick="document.getElementById('mobile-menu').classList.remove('open')">Modelo</a>
+            <a class="hover:text-primary transition-colors" href="index.html#precios" onclick="document.getElementById('mobile-menu').classList.remove('open')">Precios</a>
+            <a class="hover:text-primary transition-colors" href="index.html#faq" onclick="document.getElementById('mobile-menu').classList.remove('open')">FAQ</a>
+        </div>
+    </div>
+
+    <main class="py-xxl px-gutter max-w-container-max mx-auto text-left">
+        <div class="bg-white brutal-border shadow-brutal p-lg md:p-xl">
+            <h1 class="font-display text-[32px] md:text-[48px] uppercase tracking-tighter mb-md leading-none">Términos y Condiciones de Servicio</h1>
+            <div class="bg-dark text-primary font-mono-code p-sm inline-block brutal-border mb-lg text-[12px] md:text-[14px]">
+                Consecutivo de Control: Versión 1.0<br>
+                Fecha de Última Actualización: 7 de septiembre de 2026
+            </div>
+
+            <div class="legal-content">
+                <p>Bienvenido a Weblista. Los presentes Términos y Condiciones regulan la relación contractual entre el cliente suscriptor (en adelante, "el Cliente" o "el Usuario") y Weblista para la adquisición del servicio de "Página Web por Suscripción" (Web as a Service - WaaS).</p>
+                <p>Al activar la suscripción y realizar el pago inicial, el Cliente declara que ha leído, comprendido y acepta en su totalidad estos Términos y Condiciones.</p>
+
+                <h2>1. Definición del Servicio</h2>
+                <p>Weblista provee un servicio "llave en mano" mediante el cual el Cliente obtiene una presencia web profesional mediante el pago de una suscripción mensual. El servicio unifica y comprende:</p>
+                <ul>
+                    <li><strong>Diseño y Desarrollo Web:</strong> Construcción de un sitio web corporativo personalizado a partir del material, logos, textos e imágenes provistos por el Cliente en el Formulario de Onboarding.</li>
+                    <li><strong>Dominio propio (.com únicamente):</strong> Registro y renovación de un (1) dominio web con extensión .com (sujeto a disponibilidad). Se aclara de manera expresa que, por motivos de optimización económica y de estandarización comercial, únicamente se incluye la extensión de dominio .com. No se incluyen dominios territoriales (.co, .com.co) u otras extensiones personalizadas bajo la tarifa estándar del plan.</li>
+                    <li><strong>Alojamiento Web (Hosting):</strong> Hospedaje del sitio web en servidores optimizados y administrados en la nube bajo la infraestructura de Weblista.</li>
+                    <li><strong>Certificado de Seguridad SSL:</strong> Instalación de certificado cifrado HTTPS para garantizar un sitio seguro.</li>
+                    <li><strong>Mantenimiento Técnico y Soporte Básico:</strong> Actualizaciones de seguridad, copias de seguridad (backups), resolución de dudas y una bolsa de soporte para "cambios menores" de texto, horarios o imágenes.</li>
+                </ul>
+
+                <h2>2. Modelo de Negocio, Tarifas y Facturación</h2>
+                <ul>
+                    <li><strong>Tarifa Mensual:</strong> El servicio opera bajo una suscripción fija mensual de $34.900 COP (o el valor vigente publicado al momento de la suscripción).</li>
+                    <li><strong>Sin Costo de Instalación ($0 Setup Fee):</strong> El Cliente no deberá pagar un costo de configuración o diseño inicial al contratar el plan estándar, asumiendo Weblista la inversión operativa y de diseño upfront.</li>
+                    <li><strong>Pasarela de Pago y Periodo de Gracia:</strong> Las suscripciones se procesan a través de Mercado Pago mediante la modalidad de débito recurrente automático.</li>
+                    <li><strong>Suscripción de 7 Días de Gracia:</strong> Al suscribirse, el Cliente autoriza el débito periódico. Sin embargo, Weblista configurará el sistema de cobro diferido para que el primer cargo mensual se realice automáticamente transcurridos siete (7) días calendario desde la suscripción. Este lapso representa el periodo de gracia en el cual Weblista diseña y publica el sitio web del Cliente.</li>
+                    <li><strong>Reintentos y Suspensión:</strong> Si un cobro es rechazado por la pasarela por fondos insuficientes u otras causas, el motor de pago de Mercado Pago realizará reintentos automáticos. Weblista se reserva el derecho de suspender y retirar temporalmente el sitio web de la línea pública si la cuenta presenta un retraso en el pago superior a cinco (5) días calendario.</li>
+                </ul>
+
+                <h2>3. Propiedad de la Plataforma, Herramientas y Limitaciones de Acceso</h2>
+                <ul>
+                    <li><strong>Tecnología Utilizada:</strong> El sitio web del Cliente se construye utilizando gestores de contenido y herramientas de diseño profesionales (como WordPress y Elementor Pro) administrados centralmente por Weblista.</li>
+                    <li><strong>Rol de Acceso del Cliente (Editor únicamente):</strong> Para garantizar la seguridad del servidor, la estabilidad de la programación y el correcto funcionamiento de las licencias corporativas de Weblista (como Elementor Pro y complementos de optimización), al Cliente se le otorgará exclusivamente una cuenta con rol de "Editor" en el panel administrativo de su sitio.</li>
+                    <li><strong>Denegación de Rol "Administrador":</strong> Por ningún motivo se entregarán accesos con el rol de "Administrador" al Cliente mientras se mantenga la suscripción activa. Esto evita alteraciones accidentales del código, instalación de complementos maliciosos, conflictos técnicos o copias no autorizadas de las licencias de la agencia.</li>
+                </ul>
+
+                <h2>4. Política de Cancelación, Cláusulas de Salida y Propiedad Intelectual</h2>
+                <p>El modelo de negocio de Weblista se basa en el arrendamiento de un servicio tecnológico, no en la venta de un software o código cerrado tradicional. Por ende:</p>
+                <ul>
+                    <li><strong>Cancelación de la Suscripción:</strong> El Cliente puede dar de baja su suscripción en cualquier momento enviando un correo a soporte@weblista.com.co o cancelando el débito directamente desde su panel de Mercado Pago. Al cancelarse la suscripción sin el pago de las cláusulas de salida detalladas abajo, Weblista dará de baja el alojamiento web, suspenderá el sitio y no renovará el dominio web .com. Los archivos del sitio y el diseño permanecerán en los servidores de Weblista y no serán entregados al Cliente de forma gratuita.</li>
+                    <li><strong>Cláusula de Transferencia del Sitio Web / Migración ("Buyout Fee"):</strong> Dado que el Cliente no pagó un valor inicial de diseño, desarrollo ni instalación por su página web, si el Cliente decide cancelar la suscripción mensual pero desea llevarse el diseño final, la estructura y los archivos de su sitio web para alojarlos de forma independiente en su propio hosting, deberá abonar un pago único de cesión por valor de $500.000 COP (Quinientos mil pesos colombianos). Una vez acreditado este pago, Weblista le entregará un backup completo del sitio web (base de datos y carpeta wp-content en formato estándar) para su libre uso e instalación externa.</li>
+                    <li><strong>Cláusula de Transferencia de Dominio:</strong> Dado que Weblista asume el costo de compra, configuración y gestión inicial del dominio .com, si el Cliente desea cancelar la suscripción pero desea conservar el dominio de internet para transferirlo a su propio registrador independiente (ej. GoDaddy, Namecheap, etc.), deberá abonar una tarifa única de transferencia de $100.000 COP (Cien mil pesos colombianos). Tras recibir el pago, Weblista procederá a desbloquear el dominio y entregar el código de transferencia (EPP Code) al Cliente en un plazo máximo de 48 horas hábiles.</li>
+                </ul>
+
+                <h2>5. Alcance del Soporte y "Cambios Menores"</h2>
+                <p>La suscripción mensual incluye soporte técnico básico para garantizar la estabilidad del sitio y asistencia para cambios menores en la información comercial.</p>
+                <p><strong>¿Qué incluye el Soporte / Cambios Menores?:</strong></p>
+                <ul>
+                    <li>Modificación o corrección de textos existentes (p. ej., cambiar una dirección, un precio, un horario o un número de WhatsApp).</li>
+                    <li>Reemplazo de imágenes existentes o carga de nuevas fotografías en las secciones diseñadas.</li>
+                    <li>Cambios sutiles de color o ajustes estéticos menores que no alteren la estructura fundamental de la plantilla.</li>
+                </ul>
+                <p><strong>¿Qué NO incluye el Soporte?:</strong></p>
+                <ul>
+                    <li>Rediseño estructural completo del sitio web.</li>
+                    <li>Adición de nuevas secciones, páginas internas complejas, tiendas online (e-commerce) o pasarelas de pago adicionales.</li>
+                    <li>Desarrollo de funcionalidades personalizadas ajenas a la plantilla inicial del onboarding.</li>
+                </ul>
+                <p><strong>Actualizaciones Avanzadas (Fase Crece):</strong> Cualquier adición estructural o desarrollo mayor será catalogado como una actualización avanzada y se cotizará previamente de forma independiente mediante un pago único o un aumento acordado del valor de la suscripción.</p>
+
+                <h2>6. Obligaciones y Responsabilidad del Cliente sobre el Contenido</h2>
+                <p>El Cliente es el único y exclusivo responsable de la veracidad de la información, imágenes, marcas y textos que envíe a Weblista en el Formulario de Onboarding para ser publicados en su sitio web.</p>
+                <ul>
+                    <li><strong>Garantía de Derechos de Autor:</strong> El Cliente garantiza que posee los derechos de propiedad intelectual del logo, las marcas comerciales y las fotos provistas.</li>
+                    <li><strong>Uso Lícito del Sitio:</strong> El sitio web no podrá ser utilizado para actividades ilícitas, fraudulentas, engañosas o de carácter difamatorio. Weblista se reserva el derecho de retirar de inmediato el sitio web de la línea pública si se detecta un uso indebido o violatorio de las leyes vigentes de la República de Colombia.</li>
+                </ul>
+
+                <h2>7. Ley Aplicable y Solución de Controversias</h2>
+                <p>Estos Términos y Condiciones se rigen e interpretan de acuerdo con las leyes de la República de Colombia. Cualquier diferencia, reclamación o controversia que surja entre las partes con ocasión del presente acuerdo será resuelta en primera instancia de manera directa y concertada mediante mecanismos de arreglo directo. De no llegarse a un acuerdo en un término de treinta (30) días, las partes se someterán a los centros de conciliación de la Cámara de Comercio de Cali.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white border-t-4 border-border">
+        <div class="flex flex-col md:flex-row justify-between items-center px-gutter py-xl max-w-container-max mx-auto w-full gap-md">
+            <div class="font-display text-[24px] md:text-[28px] uppercase tracking-tighter mb-4 md:mb-0 order-first">
+                Weblista
+            </div>
+            <div class="flex flex-col md:flex-row gap-md font-display uppercase text-[14px] md:text-[16px] tracking-wide order-2 md:order-none w-full md:w-auto justify-center text-center">
+                <a class="hover:text-primary transition-colors" href="https://wa.me/573166976733" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a class="hover:text-primary transition-colors" href="terminos-condiciones.html">Términos</a>
+                <a class="hover:text-primary transition-colors" href="politica-privacidad.html">Privacidad</a>
+            </div>
+            <div class="font-bold text-gray-400 text-[12px] md:text-[16px] text-center w-full md:w-auto order-3">
+                © 2026 Weblista. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

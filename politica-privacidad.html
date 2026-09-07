@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Política de Privacidad | Weblista</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/webp" href="assets/favicon3.webp">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&amp;family=Archivo+Black&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#00E5FF",
+                        "primary-hover": "#00B3CC",
+                        "secondary": "#CCFF00",
+                        "surface": "#FFFFFF",
+                        "surface-light": "#FFFFFF",
+                        "dark": "#000000",
+                        "border": "#000000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "xxl": "80px",
+                        "lg": "24px",
+                        "xs": "4px",
+                        "sm": "8px",
+                        "unit": "4px",
+                        "md": "16px",
+                        "gutter": "24px",
+                        "container-max": "1000px"
+                    },
+                    "fontFamily": {
+                        "mono-code": ["JetBrains Mono"],
+                        "display": ["Archivo Black", "sans-serif"],
+                        "body": ["Space Grotesk", "sans-serif"]
+                    },
+                    "boxShadow": {
+                        "brutal": "8px 8px 0px 0px rgba(0,0,0,1)",
+                        "brutal-lg": "16px 16px 0px 0px rgba(0,0,0,1)",
+                        "brutal-white": "8px 8px 0px 0px rgba(255,255,255,1)"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        h1, h2, h3, .font-display {
+            font-family: 'Archivo Black', sans-serif;
+        }
+
+        .brutal-border {
+            border: 4px solid #000;
+        }
+
+        /* Fluid Typography */
+        .text-fluid-h1 { font-size: clamp(40px, 8vw, 88px); }
+        .text-fluid-h2 { font-size: clamp(32px, 6vw, 72px); }
+
+        html { scroll-behavior: smooth; }
+        [id] { scroll-margin-top: 40px; }
+
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
+        #mobile-menu.open { transform: translateX(0); }
+
+        .legal-content h2 {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        .legal-content p {
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        .legal-content ul {
+            list-style-type: disc;
+            margin-left: 24px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .legal-content li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-dark antialiased selection:bg-secondary selection:text-dark font-bold">
+    <!-- TopNavBar -->
+    <nav class="bg-surface-light/90 backdrop-blur-sm border-b-4 border-border top-0 sticky z-50 bg-surface-light/95">
+        <div class="flex justify-between items-center px-gutter py-md max-w-container-max mx-auto w-full">
+            <a class="font-display text-[24px] md:text-[28px] uppercase tracking-tighter hover:text-primary transition-colors" href="index.html">
+                Weblista
+            </a>
+            <div class="hidden md:flex gap-lg items-center font-display text-[16px] tracking-wide uppercase">
+                <a class="hover:text-primary transition-colors" href="index.html#solucion">Solución</a>
+                <!-- <a class="hover:text-primary transition-colors" href="index.html#demos">Demos</a> -->
+                <a class="hover:text-primary transition-colors" href="index.html#modelo">Modelo</a>
+                <a class="hover:text-primary transition-colors" href="index.html#precios">Precios</a>
+                <a class="hover:text-primary transition-colors" href="index.html#faq">FAQ</a>
+            </div>
+            <div class="flex items-center gap-sm">
+                <a class="inline-flex items-center justify-center bg-primary text-dark font-display md:text-[16px] px-sm md:px-md py-sm brutal-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-brutal hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all uppercase tracking-wide text-[13px]" href="https://mpago.la/2e2Bezw" target="_blank" rel="noopener noreferrer">
+                    Suscribirse
+                </a>
+                <button class="md:hidden text-dark p-unit brutal-border bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+                    <span class="material-symbols-outlined text-[24px] block">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="fixed inset-y-0 right-0 w-64 bg-white brutal-border border-r-0 z-50 transform translate-x-full flex flex-col pt-xxl px-lg" id="mobile-menu">
+        <button class="absolute top-md right-md text-dark p-unit brutal-border bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+            <span class="material-symbols-outlined text-[24px] block">close</span>
+        </button>
+        <div class="flex flex-col gap-lg font-display text-[20px] tracking-wide uppercase mt-lg">
+            <a class="hover:text-primary transition-colors" href="index.html#solucion" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solución</a>
+            <!-- <a class="hover:text-primary transition-colors" href="index.html#demos" onclick="document.getElementById('mobile-menu').classList.remove('open')">Demos</a> -->
+            <a class="hover:text-primary transition-colors" href="index.html#modelo" onclick="document.getElementById('mobile-menu').classList.remove('open')">Modelo</a>
+            <a class="hover:text-primary transition-colors" href="index.html#precios" onclick="document.getElementById('mobile-menu').classList.remove('open')">Precios</a>
+            <a class="hover:text-primary transition-colors" href="index.html#faq" onclick="document.getElementById('mobile-menu').classList.remove('open')">FAQ</a>
+        </div>
+    </div>
+
+    <main class="py-xxl px-gutter max-w-container-max mx-auto text-left">
+        <div class="bg-white brutal-border shadow-brutal p-lg md:p-xl">
+            <h1 class="font-display text-[32px] md:text-[48px] uppercase tracking-tighter mb-md leading-none">Política de Privacidad y Tratamiento de Datos Personales</h1>
+            <div class="bg-dark text-primary font-mono-code p-sm inline-block brutal-border mb-lg text-[12px] md:text-[14px]">
+                Consecutivo de Control: Versión 1.0<br>
+                Fecha de Última Actualización: 7 de septiembre de 2026
+            </div>
+
+            <div class="legal-content">
+                <p><strong>Responsable del Tratamiento de Datos:</strong><br>
+                El sitio web weblista.com.co (en adelante, "Weblista" o "la Plataforma"), operado por el titular de la agencia en Cali, Colombia, es el responsable del tratamiento de los datos personales suministrados por sus suscriptores, clientes, prospectos y usuarios.</p>
+
+                <h2>1. Marco Legal</h2>
+                <p>Esta Política de Privacidad se rige bajo las disposiciones de la Constitución Política de Colombia (Artículo 15), la Ley 1581 de 2012 (Ley General de Protección de Datos Personales o Habeas Data), el Decreto 1377 de 2013, y demás normas concordantes. Adicionalmente, al operar bajo estándares de la industria digital, incorpora principios de transparencia de regulaciones internacionales como el Reglamento General de Protección de Datos (RGPD) de la Unión Europea, protegiendo los derechos de todos los usuarios de la Plataforma.</p>
+
+                <h2>2. Datos Recolectados y su Origen</h2>
+                <p>Weblista recolecta datos personales a través de los siguientes canales:</p>
+                <ul>
+                    <li><strong>Formulario de Onboarding:</strong> Información comercial del suscriptor requerida para la construcción de su sitio web (Nombre, correo electrónico, WhatsApp principal de atención, dirección física de su negocio, horarios de atención, enlaces de redes sociales, logotipos, imágenes y material gráfico corporativo).</li>
+                    <li><strong>Registro de Suscripción:</strong> Datos necesarios para la formalización del servicio (Nombre completo, documento de identidad/NIT, dirección de facturación, correo electrónico).</li>
+                    <li><strong>Plataformas de Pago:</strong> Los pagos recurrentes son procesados de forma segura e independiente por la pasarela de pagos autorizada Mercado Pago. Weblista no almacena ni tiene acceso a datos sensibles de tarjetas de crédito o débito ni credenciales bancarias.</li>
+                    <li><strong>Formularios de Contacto y WhatsApp:</strong> Datos suministrados de forma voluntaria por usuarios con fines de cotización y asesoría.</li>
+                </ul>
+
+                <h2>3. Finalidad del Tratamiento de Datos</h2>
+                <p>Los datos personales recolectados por Weblista serán tratados con las siguientes finalidades de carácter comercial y operativo:</p>
+                <ul>
+                    <li>Gestionar el alta, suscripción, procesamiento de pagos y facturación del plan "Weblista todo incluido".</li>
+                    <li>Ejecutar la construcción, diseño, personalización e instalación de la página web del cliente utilizando la información comercial (NAP y servicios) provista en el onboarding.</li>
+                    <li>Configurar y registrar el dominio de internet .com asignado al cliente.</li>
+                    <li>Enviar comunicaciones de soporte técnico, facturación, notificaciones de cobro, reintentos de pago, o alertas sobre el estado de la suscripción a través de correo electrónico o WhatsApp.</li>
+                    <li>Atender solicitudes de soporte, quejas, reclamos o requerimientos de cambios menores en las páginas de los suscriptores.</li>
+                    <li>Realizar análisis estadísticos internos y encuestas de satisfacción para mejorar la calidad de la plataforma.</li>
+                </ul>
+
+                <h2>4. Derechos de los Titulares de los Datos</h2>
+                <p>De conformidad con el artículo 8 de la Ley 1581 de 2012, el Titular de los datos personales tiene derecho a:</p>
+                <ul>
+                    <li>Conocer, actualizar y rectificar sus datos personales frente a Weblista.</li>
+                    <li>Solicitar prueba de la autorización otorgada a Weblista para el tratamiento de sus datos.</li>
+                    <li>Ser de forma clara informado por Weblista, previa solicitud, respecto del uso que le ha dado a sus datos personales.</li>
+                    <li>Presentar quejas ante la Superintendencia de Industria y Comercio (SIC) por infracciones a lo dispuesto en la normativa de protección de datos.</li>
+                    <li>Revocar la autorización y/o solicitar la supresión de sus datos cuando en el tratamiento no se respeten los principios, derechos y garantías constitucionales y legales.</li>
+                    <li>Acceder de forma gratuita a sus datos personales que hayan sido objeto de tratamiento.</li>
+                </ul>
+
+                <h2>5. Mecanismo para el Ejercicio de los Derechos (Habeas Data)</h2>
+                <p>Los titulares de la información podrán ejercer sus derechos de Habeas Data enviando una solicitud formal por escrito con el asunto "Protección de Datos Personales" al correo electrónico oficial: soporte@weblista.com.co, detallando su identificación, la descripción de los hechos que dan lugar a la solicitud y el derecho que desea ejercer. Las consultas serán atendidas en un término máximo de diez (10) días hábiles, y los reclamos en quince (15) días hábiles conforme a la ley colombiana.</p>
+
+                <h2>6. Uso de Cookies y Tecnologías de Seguimiento</h2>
+                <p>Weblista utiliza cookies propias y de terceros en su sitio web para mejorar la experiencia de usuario, recordar sus preferencias, analizar el tráfico web y optimizar campañas de marketing (Google Ads / Facebook Ads). El usuario puede configurar su navegador para bloquear o eliminar las cookies, aunque esto podría afectar el correcto funcionamiento de algunas características de la Plataforma.</p>
+
+                <h2>7. Modificaciones a la Política de Privacidad</h2>
+                <p>Weblista se reserva el derecho de modificar esta Política de Privacidad en cualquier momento para adaptarla a novedades legislativas o comerciales. Cualquier cambio sustancial será publicado en el sitio web oficial o notificado mediante correo electrónico a los suscriptores activos con al menos cinco (5) días hábiles de anterioridad a su entrada en vigencia.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white border-t-4 border-border">
+        <div class="flex flex-col md:flex-row justify-between items-center px-gutter py-xl max-w-container-max mx-auto w-full gap-md">
+            <div class="font-display text-[24px] md:text-[28px] uppercase tracking-tighter mb-4 md:mb-0 order-first">
+                Weblista
+            </div>
+            <div class="flex flex-col md:flex-row gap-md font-display uppercase text-[14px] md:text-[16px] tracking-wide order-2 md:order-none w-full md:w-auto justify-center text-center">
+                <a class="hover:text-primary transition-colors" href="https://wa.me/573166976733" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a class="hover:text-primary transition-colors" href="terminos-condiciones.html">Términos</a>
+                <a class="hover:text-primary transition-colors" href="politica-privacidad.html">Privacidad</a>
+            </div>
+            <div class="font-bold text-gray-400 text-[12px] md:text-[16px] text-center w-full md:w-auto order-3">
+                © 2026 Weblista. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
